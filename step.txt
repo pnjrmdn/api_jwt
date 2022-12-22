@@ -1,20 +1,12 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+npm init
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+[go to https://expressjs.com/en/starter/generator.html]
+npx express-generator
 
-var app = express();
+express -h
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+[if just create API]
+express -h
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+npm install
 
-module.exports = app;
