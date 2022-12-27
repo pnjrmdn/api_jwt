@@ -1,12 +1,15 @@
 npm init
 
 [go to https://expressjs.com/en/starter/generator.html]
-npx express-generator
+$ npm install -g express-generator
+$ express
 
 express -h
 
 [if just create API]
 express -h
 
+[if installed start this]
+express --no-view
 npm install
 
